@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Rubic Cube Forum</title>
+     
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" type="text/css" href="css/comments.css">
+     <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/main.js"> </script>
+        <script src="js/comments.js"> </script>
+ </head>
+         <body>
+             <header></header>
+<!----------------------------          navigation            --------------------------->
+             <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Rubick Cube</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Forum</a></li>
+        <li class="dropdown"> <a href="shop.html">Shop </a></li>
+        <li><a href="tutorial.html">Tutorial</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a href="#" onclick="document.getElementById('idsignup').style.display='block'"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+        
+          <li><a href="#" onclick="document.getElementById('idlogin').style.display='block'" style="width:auto;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+             
+             <!--                     Login                      -->
+             
+     
+             
+        <div id="idlogin" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('idlogin').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/headicon.jpg" alt="Mario" class="Mario">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button class="submitlogin" type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('idlogin').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+             
+             <!--                     sign up                      -->
+             
+<div id="idsignup" class="modal">
+  <span onclick="document.getElementById('idsignup').style.display='none'" class="closesignup" title="Close Modal">&times;</span>
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="container">
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <input type="checkbox" checked="checked"> Remember me
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('idsignup').style.display='none'" class="cancelsignupbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+      <!----------------------------          breadcrumb         --------------------------->           
+<ul class="breadcrumb">
+  <li><a href="index.html">Froum</a></li>
+    <li><a href="forum_topic.html">Froum Topic</a></li>
+    <li>Post</li>
+</ul>         
+             
+ 
+<!--------------          forum post            ---------------------------> 
+<!----------------------------          post 1         --------------------------->
+             <div class="topictitle">
+                 <p>How to start the Rubic cube</p>
+             </div>
+             
+             <p class="posttitle">Post title</p>
+             
+             <div class="userdetailarea">
+                 <table class="userdetail">
+                 
+                     <td><img id="usericon" src="images/headicon.jpg" alt="user icon">
+                         <br><p> Name:username</p>
+                         <p> ID:4321543<p>
+                         <p>Data:04/05/17</p>
+                     </td>
+                        </table>
+             </div>
+             
+             <div class="postcontent">
+                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+             </div>
+             
+                 
+<!--------------          comments            --------------------------->                 
+        <div class="commentsarea">   
+           <form id="newCommentForm" method="post">
+				<div class="newCommentInputs">
+					<label for="commentName">name</label><input type="text" id="commentNameInput" name="commentNameInput">
+						<label for="commentMessage">message</label><textarea id="commentMessageInput" ></textarea>
+				
+					<input type="submit" value="Submit" />
+					</div>
+					<div style="clear:both;"></div>
+			</form>
+			<section id="comments">
+				<div id="commentsContainer">
+					<div class="comment">
+						<div class="deleteComment">delete</div>
+						<div class="commentLeft">
+							<div class="commentImage" style="background-image:url(images/po.jpg);"></div>
+						</div>
+						<div class="commentContent">
+							<p class="commentName">Holly</p>
+							<p class="commentAge">a few hours ago</p>
+							<p class="commentMessage"> I love study, study makes me feel happy </p>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				</div>
+			</section>
+			<section id="siteTemplates">
+				<div id="comment_template">
+					<div class="comment">
+						<div class="deleteComment">delete</div>
+						<div class="commentLeft">
+							<div class="commentImage" style="background-image:url(images/sun.jpg);"></div>
+						</div>
+						<div class="commentContent">
+							<p class="commentName">Name</p>
+							<p class="commentAge">Time</p>
+							<p class="commentMessage">Content</p>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				</div>
+			</section>
+			<script type="text/javascript" src="js/comments.js"> </script>
+        </div>
+        
+
+<!--           close Login, signup by clicking anywhere                  -->           
+<script>
+// Get the modal
+var modallogin = document.getElementById('idlogin');
+var modalsignup = document.getElementById('idsignup');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modallogin) {
+        modallogin.style.display = "none";
+        
+    }
+    if (event.target == modalsignup) {
+        modalsignup.style.display = "none";
+        
+    }
+}
+</script> 
+           
+  <!---------------------------             footer  -------------------------->           
+             
+             <footer>
+                <p>Posted by: TEAM CUBE</p>
+                 <p><b class="material-icons" style="font-size: 14px">copyright</b>2017 CUBE</p>
+                <p>Contact information: <a href="">bdsb2011@gmail.com</a></p>
+             </footer>                    
+         </body>
+</html>

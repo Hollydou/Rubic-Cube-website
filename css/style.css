@@ -1,0 +1,1333 @@
+@media screen and (min-device-width:1080px){
+body{
+    margin:auto;
+    padding:0;
+    width: 100%;
+    min-width: 960px;
+    font-size: 15px;
+}
+
+/*******************             ********************     *********************/
+/*******************             ********************    *********************/
+
+/*******************             style the index.html(store)     *****************/
+
+/*******************             ********************     *********************/
+/*******************             ********************     *********************/
+
+
+
+/******************************        style of navigation      *************************/
+nav{
+    
+    background-color: #333;
+    margin:0;
+    overflow: hidden;  
+}
+
+nav ul {
+    margin:0;
+    padding:0;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    
+}
+
+nav > ul > li >a{
+    color: #aaa;
+    display: inline-block;
+    line-height: 2em;
+    padding:0.5em 1em;
+    text-decoration:none;
+    
+
+}
+nav li:hover {
+	background-color: #666;
+}
+/***********  style the logo Rubic Cube *********/
+#logo{
+    font-family: 'Baloo', cursive;
+    margin-left: 5%;  
+}
+#logo a{
+    color: #4da6ff;
+}
+    #usernamestyle{
+        padding: 1em;
+    }
+    #logoutstyle{
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    }
+/*************************          style of the login        ************************/
+  .login{
+        float: right;
+        margin-right: 1%;
+        margin-top: 1%;
+        padding-right: 1%;
+        padding-left: 1%;
+        background-color: #4da6ff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        
+}
+    
+    .signup{
+        float: right;
+        margin-top: 1%;
+        margin-right: 1%;
+        background-color: #4da6ff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        
+    }   
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+
+button:hover {
+    opacity: 0.8;
+}
+.submitlogin{
+    background-color: #4da6ff;
+        color: white;
+        width: 100%;
+    }
+    .signupbtn{
+        background-color: #4da6ff;
+        color: white;
+        width: 100%;
+        padding: 14px 20px;
+    }
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+.cancelsignupbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+    /* Float cancel and signup buttons and add an equal width */
+.cancelsignupbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+    /* Add padding to container elements */
+.container {
+    padding: 16px;
+    width: 100%;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+    
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modallogin (background) */
+    
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+    /* The Modalsignup (background) */
+
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+
+
+
+/* The Close login Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+/* The Close signup Button (x) */
+.closesignup{
+    position: absolute;
+    right:11%;
+    top: 16%;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 10;
+    }
+    
+    
+.closesignup:hover,
+.closesignup:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+    
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+    
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+    .cancelsignupbtn, .signupbtn {
+        width: 100%;
+    }
+}
+   /***********************     end style the login       *******************************/ 
+/**************************      style of footer       *******************************/
+footer { 
+    margin-top: 20em;
+    padding-top: 2em;
+    clear: both;
+    color: #aaa;
+    background-color: #333;
+    bottom: 0;
+/*    position: absolute;*/
+    width:100%;
+    height:100%;    
+}
+footer a {
+    color: #aaa;
+}
+footer a:hover{
+color:aliceblue;
+}
+footer p{
+text-align:center;
+}
+
+
+/*********************        style the categories list       **************************/
+.list{
+    position: fixed;
+    width: 8em;
+    margin-left: 5%;
+    padding:0;
+    border: 0.1em solid #b3b3b3;
+    background-color: #f2f2f2; 
+    border-radius: 0.2em;
+    
+}
+.list ul{
+    list-style-type: none;
+    margin: 0;
+    
+}
+
+/***********  style the categories *********/
+.list p{
+    text-align: center;
+    padding-bottom: 5%;
+    border-bottom: 0.1em solid #b3b3b3;
+}
+/***********  style the position of the slide picture *********/
+.slidepicture{
+    margin-left: 21%;
+    width: 75%;
+    
+}
+/*******************      style the display shop information area     *********************/
+.shopinfoarea{
+    float: left;
+    width:70%;
+    margin-left: 20%;
+    margin-bottom: 2em;
+   
+}
+/*********************        style the link     **************************/
+.shopinfoarea a{
+    text-decoration:none;
+    color:black;
+}
+
+/*********************        style the item image     **************************/
+.shopinfo{
+    padding:1em;
+    margin: 1em;
+    background-color: #f2f2f2; 
+    border: 0.1em solid #b3b3b3;
+    border-radius: 0.2em;
+    
+   
+}
+#imglist{
+    width:100%;   
+}
+/********************           make the name and price align each side       **************/
+.shopinfo p{
+    text-align: justify;
+    text-align-last: justify;
+}
+/*******************             style the add to cart button     *********************/
+.addtocart{
+    float:right;
+    background-color:#ff9900;
+    color:white;
+    border-radius: 0.5em;
+    border:none;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1em;
+}
+
+
+table button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.addtocart span:after{
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.addtocart:hover span{
+    padding-right: 25px;
+}
+.addtocart:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+/*--------------------        END of the style the shop.html(store)    -------------------*/
+
+
+
+/*******************             ********************     *********************/
+/*******************             ********************    *********************/
+
+/*******************    style the shop detail    *****************/
+
+/*******************             ********************     *********************/
+/*******************             ********************     *********************/
+
+/***********  style the image *********/
+.shopimg{
+    width: 40%;
+    margin:3%;
+    border: 0.1em solid #b3b3b3;
+    border-radius: 0.5em;
+    
+}
+
+/***********  style the item name *********/
+.shopname{
+    font-size: 2.5em;
+    float: left;
+    
+}
+
+/***********  style the quantity and price area*********/
+.payinfo{
+    width：90%;
+    float: right;
+    margin-right: 25%;
+    margin-top: 5%;
+    
+}
+.payinfo td{
+    font-size: 20px;
+}
+/***********  style the buy button *********/
+.buy{
+    background-color:#ff9900;
+    color:white;
+    padding: 0.4em;
+    border-radius: 0.5em;
+    border:none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+/***********  style the item detail title *********/
+.itemdetail{
+    font-size: 2.5em;
+    margin: 3%;
+    border-bottom: 0.1em solid #d9d9d9; 
+}
+
+/***********  style the description *********/
+.itemdescription{
+    width: 80%;
+    margin: 3%;
+}
+
+/***********  style the number *********/
+#num{
+    width: 3.5em;
+    height: 1.5em;
+    border: 0.1em solid #d9d9d9;
+    text-align: right;
+}
+
+/***********  style the +,- *********/
+#up{
+    cursor: pointer;
+}
+
+#down{
+    cursor: pointer;
+}
+
+/*-----------------        END the style of the shopdetail.html   ---------------------*/
+
+
+
+
+
+
+/*******************             ********************     *********************/
+/*******************             ********************    *********************/
+
+/*******************             style the Forum page(index.html)     *********************/
+
+/*******************             ********************     *********************/
+/*******************             ********************     *********************/
+
+
+/***********  style the map *********/
+#heatmaparea{ 
+    height: 400px;
+    width: 90%;   
+}
+    .mapdescription{
+        color: #b3b3b3;
+        display: block;
+        margin-top: 1%;
+        padding-left: 60%;               
+    }
+    .maparea{
+        margin-right: 1.5em;
+        float: right;
+        width: 40%;
+    }
+
+/***********  style the topic title *********/
+    #topicarea{
+        margin-left: 5%;
+    }
+.topicp{
+    color:white;
+    width: 45em;
+    border-radius: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.3em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    
+    background-color: #4da6ff;
+}
+/***********  style the description area *********/
+.topicarea{
+    width: 45%;
+    margin-left: 5%;
+}
+
+/***********  style the topic icon *********/
+#topicicon{
+    float: left;
+    width:7%;
+    
+}
+/***********  style the view times and data *********/
+#viewtimes{
+    float:right;
+    color: #b3b3b3;
+}
+/***********  style the link *********/
+.topica{
+    color: black;
+    text-decoration:none;
+}
+/***********  style the map button *********/
+.mapbutton{
+	 background-color: #4da6ff;
+	 color:white;
+	 border-radius: 0.5em;
+	 float:absolute;
+}
+.mapbutton:hover{
+	 background-color: #1a8cff;
+}
+
+/*-----------------             END of the style the forum.html   ---------------------*/
+
+
+
+/*******************             ********************     *********************/
+/*******************             ********************    *********************/
+
+/*******************    style the Forum specific topic page     *****************/
+
+/*******************             ********************     *********************/
+/*******************             ********************     *********************/
+
+    /* Comment Bar*/
+.submitpostarea{
+    width:90%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#inputComment{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.poststyle{
+    float: left;
+    margin-left: 8%;
+    }
+textarea {
+	width: 80%;
+	border: 1px solid #ccc;
+    float:left;
+    margin: 1%;
+    border-radius: 4px;
+}
+
+.submitbutton{
+    width: 100%;
+    background-color: #4DA6FF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #4694e2;
+}
+
+
+/***********  style the post theme *********/
+.posttopic{
+    color:white;
+    width: 90%;
+    border-radius: 0.5em;
+    padding-left: 0.3em;
+    margin-top: 2%;
+    margin-left:5%;
+    margin-bottom: 2%;
+    background-color: #4da6ff;
+}
+.createpost{
+    margin-left: 70em;
+    float: right;
+}
+/***********  style the post headicon *********/
+#headicon{
+    width: 3em;
+    float: left;
+    border: 0.1em solid #b3b3b3;
+    border-radius: 0.2em;
+}
+/***********  style the post area *********/
+.postarea{
+    margin-left: 5%;
+    width:90%;
+    border-bottom: 0.1em solid #e6e6e6;
+}
+
+/***********  style the post link *********/
+.posta{
+    color: black;
+    text-decoration:none;
+}
+/***********  style the id,viewtimes, data *********/
+#postinfo{
+    float:right;
+    color: #b3b3b3;
+    
+}
+
+/***********  style the basic description of the post *********/
+#postdescribe{
+    float:left;
+}
+
+/*-----------------        END of the style the forum_topic.html   ---------------------*/
+
+
+/*******************             ********************     *********************/
+/*******************             ********************    *********************/
+
+/*******************    style the   post detail    *****************/
+
+/*******************             ********************     *********************/
+/*******************             ********************     *********************/
+
+
+/***********  style the user detail *********/
+.userdetailarea{
+    width:20%;
+    position: absolute;
+}
+
+.userdetail{
+    padding:0.5em;
+    margin: 8%;
+    background-color: #f2f2f2; 
+    border: 0.1em solid #b3b3b3;
+    border-radius: 0.2em;
+}
+
+#usericon{
+    border: 0.1em solid #b3b3b3;
+    width:40%;
+    clear: both; 
+    display: block; 
+    margin:auto; 
+    
+}
+
+.userdetail p{
+    text-align: center;
+    color:#737373;
+}
+
+/***********  style the post content *********/
+.postcontent{
+    float:right;
+    width:75%;
+    height: 14.5em;
+    padding:0.5em;
+    margin: 1.5%;
+    background-color: #f2f2f2; 
+    border: 0.1em solid #b3b3b3;
+    border-radius: 0.2em;
+}
+
+/***********  style the post topic  *********/
+.topictitle{
+    color:white;
+    width: 96%;
+    border-radius: 0.2em;
+    line-height: 3em;
+    padding-left: 1em;
+    margin-left:1.5%;
+    background-color: #4da6ff;
+}
+.posttitle{ 
+    width: 96%;
+    font-size: 2em;
+    margin: auto;
+    margin-left:1.5%;
+}
+
+/***********  style the comments area *********/
+/***********  more css detail of the comment in the comments.css *********/
+.commentsarea{
+    clear: both;
+    width: 97%;
+    margin-left:1.5%;
+}
+
+/*-----------------        END of the style the post.html   ---------------------*/
+
+
+/*******************             ********************     *********************/
+/*******************             ********************    *********************/
+
+/*******************    style the tutorial.html page    *****************/
+
+/*******************             ********************     *********************/
+/*******************             ********************     *********************/
+    
+    .video{
+        margin: 6%;
+        
+    } 
+    iframe{
+        width: 27%;
+        height: 15em;
+        margin:2%;
+        border: 0.1em solid #b3b3b3;
+        border-radius: 0.2em;
+    }
+    
+    
+    
+    
+    
+    
+  /*******************            end of the style tutorial.html     *********************/  
+    
+/*******************             ********************     *********************/
+/*******************             ********************    *********************/
+
+/*******************    style the About detail    *****************/
+
+/*******************             ********************     *********************/
+/*******************             ********************     *********************/
+
+
+/***********  style the about table *********/
+.pictureshow{ 
+    
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%; 
+    
+    
+    
+}
+
+/***********  style the about picture *********/
+.pictureshow img{
+    margin: 1em;
+    display: inline-block;
+    width: 30%;
+    border: 0.1em solid #b3b3b3;
+    border-radius: 0.2em;
+    
+}
+
+
+
+/*-----------------        END of the style of about.html   ---------------------*/
+    
+}
+/*-----------------        mobile.css   ---------------------*/
+@media screen 
+and (min-device-width:300px) 
+and (max-device-width:768px) 
+and (-webkit-min-device-pixel-ratio: 2) 
+    and (orientation: portrait) {
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        /*--- style the login  --*/
+        input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+}
+
+        /* Set a style for all buttons */
+
+        button:hover {
+            opacity: 0.8;
+        }
+        .submitlogin{
+            background-color: #4da6ff;
+                color: white;
+                width: 100%;
+            }
+            .signupbtn{
+                background-color: #4da6ff;
+                color: white;
+                width: 100%;
+                padding: 14px 20px;
+            }
+
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+        .cancelsignupbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+            /* Float cancel and signup buttons and add an equal width */
+        .cancelsignupbtn,.signupbtn {
+            float: left;
+            width: 50%;
+        }
+            /* Add padding to container elements */
+        .container {
+            padding: 16px;
+            width: 100%;
+        }
+
+        /* Center the image and position the close button */
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+            position: relative;
+        }
+
+
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        /* The Modallogin (background) */
+
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 10; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            padding-top: 60px;
+        }
+            /* The Modalsignup (background) */
+
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+
+
+
+
+        /* The Close login Button (x) */
+        .close {
+            position: absolute;
+            right: 25px;
+            top: 0;
+            color: #000;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        /* The Close signup Button (x) */
+        .closesignup{
+            position: absolute;
+            right:11%;
+            top: 11%;
+            color: #000;
+            font-size: 35px;
+            font-weight: bold;
+            z-index: 10;
+            }
+
+
+        .closesignup:hover,
+        .closesignup:focus {
+            color: red;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: red;
+            cursor: pointer;
+        }
+
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        /*--- style the footer  --*/
+        footer{
+            text-align: center;
+            background-color: #333;
+            color: #aaa;
+        }
+        footer a{
+            color: #aaa;
+        }
+      /*--- style the tutorial.html mobile  --*/ 
+        .video{
+            margin:8%;
+        }
+        iframe{
+            margin-bottom: 5S%;
+        }
+        
+        .modal{
+            display: none;
+        }
+        
+        /***********  style the about table *********/
+        .pictureshow{ 
+            width: 80%;
+            margin-top: 10%;
+            margin-left: 10%; 
+        }
+
+        /***********  style the about picture *********/
+        .pictureshow img{
+            margin-bottom: 2em;
+            display: inline-block;
+            width: 100%;
+            border: 0.1em solid #b3b3b3;
+            border-radius: 0.2em;
+
+}
+        /*--- style the shop.html mobile  --*/
+        .slidepicture{
+            display: none;
+        }
+        /*********************        style the categories list       **************************/
+        .list{
+            position: fixed;
+            width: 8em;
+            margin-left: 5%;
+            padding:0;
+            border: 0.1em solid #b3b3b3;
+            background-color: #f2f2f2; 
+            border-radius: 0.2em;
+
+        }
+        .list ul{
+            list-style-type: none;
+            margin: 0;
+
+        }
+
+        /***********  style the categories *********/
+        .list p{
+            text-align: center;
+            padding-bottom: 5%;
+            border-bottom: 0.1em solid #b3b3b3;
+        }
+        /***********  style the position of the slide picture *********/
+        .slidepicture{
+            margin-left: 21%;
+            width: 75%;
+
+        }
+/*******************      style the display shop information area     *********************/
+        .shopinfoarea{
+
+            width:70%;
+            margin-left: 15%;
+    
+
+        }
+        .shopshow td{
+            min-width: 200px;
+            float: left;
+        }
+        /*********************        style the link     **************************/
+        .shopinfoarea a{
+            text-decoration:none;
+            color:black;
+        }
+
+        /*********************        style the item image     **************************/
+        .shopinfo{
+            padding:1em;
+            margin: 1em;
+            background-color: #f2f2f2; 
+            border: 0.1em solid #b3b3b3;
+            border-radius: 0.2em;
+
+
+        }
+        #imglist{
+            width:100%;   
+        }
+        /********************           make the name and price align each side       **************/
+        .shopinfo p{
+            text-align: justify;
+            text-align-last: justify;
+        }
+        /*******************             style the add to cart button     *********************/
+        .addtocart{
+            float:right;
+            background-color:#ff9900;
+            color:white;
+            border-radius: 0.5em;
+            border:none;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 1em;
+        }
+
+        /***********  style the image *********/
+        .shopimg{
+            width: 80%;
+            margin:10%;
+            border: 0.1em solid #b3b3b3;
+            border-radius: 0.5em;
+
+        }
+
+        /***********  style the item name *********/
+        .shopname{
+            font-size: 1.5em;
+
+        }
+
+        /***********  style the quantity and price area*********/
+        .payinfo{
+            margin: 10%;
+
+        }
+        .payinfo td{
+            font-size: 20px;
+        }
+        /***********  style the buy button *********/
+        .buy{
+            width: 6em;
+            background-color:#ff9900;
+            color:white;
+            padding: 0.4em;
+            border-radius: 0.5em;
+            border:none;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+        /***********  style the item detail title *********/
+        .itemdetail{
+            font-size: 2.5em;
+            margin: 3%;
+            border-bottom: 0.1em solid #d9d9d9; 
+        }
+
+        /***********  style the description *********/
+        .itemdescription{
+            text-align: justify;
+            margin: 8%;
+        }
+
+        /***********  style the number *********/
+        #num{
+            
+            height: 1.5em;
+            border: 0.1em solid #d9d9d9;
+            text-align: right;
+        }
+
+        /***********  style the +,- *********/
+        #up{
+            cursor: pointer;
+        }
+
+        #down{
+            cursor: pointer;
+        }
+        /***********  style the map *********/
+    
+        #heatmaparea{
+            display:block;
+            height: 400px;
+            width: 90%;
+            margin:auto;
+        }
+        .mapdescription{
+            color: #b3b3b3;
+            display: block;
+            margin-top: 1%;
+            margin-left: 50%;
+
+
+            }
+        /***********  style the topic title *********/
+        .topicp{
+            color:white;
+            padding-left: 0.5em;
+            padding-right: 0.3em;
+            padding-top: 0.3em;
+            padding-bottom: 0.3em;
+            background-color: #4da6ff;
+        }
+        /***********  style the description area *********/
+        .topicarea{
+            display: block;
+            margin: 5%;
+            text-align: justify
+        }
+
+        /***********  style the topic icon *********/
+        #topicicon{
+            display: block;
+            width:20%;
+            margin:auto;
+        }
+        /***********  style the view times and data *********/
+        #viewtimes{
+            float:right;
+            color: #b3b3b3;
+        }
+        /***********  style the link *********/
+        .topica{
+            color: black;
+            text-decoration:none;
+        }
+        /* Comment Bar*/
+        .submitpostarea{
+            width:90%;
+            margin-bottom: 10%;
+            margin-left: 5%;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #inputComment{
+            width: 80%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .poststyle{
+            float: left;
+            margin-left: 3%;
+            }
+        textarea {
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+
+        .submitbutton{
+            width: 100%;
+            background-color: #4DA6FF;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #4694e2;
+        }
+
+/*******************    style the forum-topic    *****************/
+        /***********  style the post theme *********/
+        .posttopic{
+            color:white;
+            width: 90%;
+            border-radius: 0.5em;
+            padding-left: 0.3em;
+            margin-top: 2%;
+            margin-left:5%;
+            margin-bottom: 2%;
+            background-color: #4da6ff;
+        }
+        .createpost{
+            margin-left: 70em;
+            float: right;
+        }
+        /***********  style the post headicon *********/
+        #headicon{
+            margin-bottom: 20%;
+            margin-right: 15px;
+            width: 5em;
+            border: 0.1em solid #b3b3b3;
+            border-radius: 0.2em;
+        }
+        /***********  style the post area *********/
+        .postarea{
+            margin-left: 5%;
+            width:90%;
+            border-bottom: 0.1em solid #e6e6e6;
+        }
+
+        /***********  style the post link *********/
+        .posta{
+            color: black;
+            text-decoration:none;
+        }
+        /***********  style the id,viewtimes, data *********/
+        #postinfo{
+            color: #b3b3b3;
+
+        }
+
+        /***********  style the basic description of the post *********/
+        #postdescribe{
+            float:left;
+        }
+        
+        
+        /*******************    style the   post detail    *****************/
+        /***********  style the user detail *********/
+        .userdetailarea{
+        }
+
+        .userdetail{
+            width: 90%;
+            margin: auto;
+            background-color: #f2f2f2; 
+            border: 0.1em solid #b3b3b3;
+            border-radius: 0.2em;
+        }
+
+        #usericon{
+            border: 0.1em solid #b3b3b3;
+            width: 25%;
+            float: left;
+            display: block;
+            margin-top: 5%;
+            margin-left: 2%;
+
+        }
+
+        .userdetail p{
+            text-align: center;
+            color:#737373;
+        }
+
+        /***********  style the post content *********/
+        .postcontent{
+            width:90%;
+            height: 14.5em;
+            padding:0.5em;
+            margin-bottom: 5%;
+            margin-left: 5%;
+            background-color: #f2f2f2; 
+            border: 0.1em solid #b3b3b3;
+            border-radius: 0.2em;
+        }
+
+        /***********  style the post topic  *********/
+        .topictitle{
+            color:white;
+            width: 96%;
+            border-radius: 0.2em;
+            line-height: 3em;
+            padding-left: 1em;
+            margin-left:1.5%;
+            background-color: #4da6ff;
+        }
+        .posttitle{ 
+            font-size: 2em;
+            margin-left:5%;
+        }
+
+        /***********  style the comments area *********/
+        /***********  more css detail of the comment in the comments.css *********/
+        .commentsarea{  
+            width: 98%;
+            margin: auto;
+        }
+        
+        
+        
+        
+}
+
+/*-----------------        End of mobile.css   ---------------------*/
+
+
+
+/*
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}*/
